@@ -39,7 +39,7 @@ python scripts/sciencedirect_download.py --request /path/to/temporary-request.js
 
 `system-proxy` 沿用现有 HTTPS 代理，不改全局设置。已合法取得的实际地址因传输问题失败且没有访问验证或拒绝时，可以尝试一次 `--route direct`；该参数仅为本次 curl 指定 IPv4、TLS 1.2 上限并绕过显式代理，仍验证证书。它不保证绕过系统隧道或网络路由；不把单次成功解释为确定故障原因。
 
-脚本先保存 `PII-role.pdf.part`；HTTP/PDF 结构、可解析页数、加密状态与 SHA-256 校验通过后改为 `.pdf`。已有同名 PDF 拒绝覆盖。`pdf_structure_valid_identity_pending` 表示结构通过，题名/DOI 身份尚待核验。非敏感日志写在资料目录的 `下载记录/`，专用请求 JSON 在尝试结束后删除；不要公开日志或文献。
+脚本先保存 `PII-role.pdf.part`；HTTP/PDF 结构、可解析页数和加密状态检查通过并记录 SHA-256 后改为 `.pdf`。已有同名 PDF 拒绝覆盖。`pdf_structure_valid_identity_pending` 表示结构通过，题名/DOI 身份尚待核验。非敏感日志写在资料目录的 `下载记录/`，专用请求 JSON 在尝试结束后删除；不要公开日志或文献。
 
 ## 有限恢复与停止
 
