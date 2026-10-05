@@ -1,0 +1,51 @@
+# User-generated research state stays outside the public skill templates.
+.robotics-writing/
+private/
+local-library/
+精读文献/
+文献管理/
+outputs/
+work/
+
+# Private distillation notes and author feedback.
+P*-distillation.md
+author-feedback-*.md
+
+# Original papers, manuscripts, extracted media and delivery archives.
+*.pdf
+*.PDF
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.zip
+*.7z
+*.mp4
+*.mov
+
+# Credentials, temporary download requests and transport logs.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+cookies*.json
+request*.json
+*download-request*.json
+下载记录/
+*.log
+*.part
+
+# Local Python environment and editor artifacts.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
