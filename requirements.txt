@@ -1,0 +1,2 @@
+# Optional: needed only by the ScienceDirect PDF download helper.
+pypdf
