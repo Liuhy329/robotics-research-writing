@@ -1,0 +1,4 @@
+interface:
+  display_name: "机器人科研写作"
+  short_description: "从真实机器人文献与写作反馈提炼有出处、带适用条件的个人写作方法"
+  default_prompt: "使用 $robotics-research-writing 分析这篇机器人论文的写作方法，核对出处并在我的研究工作目录更新适用规则。"
